@@ -47,6 +47,7 @@ public class CursorController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
+            Debug.Log(hit.transform);
             InteractableItem item = hit.transform.GetComponent<InteractableItem>();
 
             if (item)
